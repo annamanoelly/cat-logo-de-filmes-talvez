@@ -1,0 +1,173 @@
+body{
+    background: linear-gradient(to left, #7A63FF, #1E1E1E);
+    
+}
+
+body{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu ul li {
+    display: inline-block;
+    position: relative; /* Para posicionamento do submenu */
+}
+
+.menu ul li ul.submenu {
+    display: none; /* Oculta o submenu por padrão */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
+
+.menu ul li:hover ul.submenu {
+    display: block; /* Mostra o submenu quando o item pai é hover */
+}
+
+.menu ul li ul.submenu li {
+    display: block;
+}
+
+.menu ul li ul.submenu li a {
+    padding: 8px 20px;
+    color: #1E1E1E;
+    text-decoration: none;
+    display: block;
+}
+
+.menu ul li ul.submenu li a:hover {
+    background-color: #7A63FF;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    transition: color 0.10s ease-in-out;
+    color:  #f0f4ff94;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px groove #7A63FF;
+    margin-right: 10px;
+}
+
+.search-box button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #1E1E1E;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #3c2b9b;
+}
+
+.img{
+    font-size: 30px; /* Tamanho da fonte */
+    text-transform: uppercase;
+    color:rgb(150, 15, 15);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 50%;
+    margin-left: 25%;
+    justify-content: center;
+    height: 200px;
+    display: flex;
+    gap: 5px;
+}
+
+.container img{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all ease-out 0.5s;
+    cursor: pointer;
+}
+
+.container img:hover{
+    width: 100%;
+}
+
+.row__filme{
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transform:  450ms;
+}
+
+.row__filmes{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row__poster:hover{
+    transform: scale(1.08);
+}
+
+.row__filmeLarge{
+    max-height: 250px;
+}
+
+.row__filmeLarge:hover{
+    transform: scale(1.09);
+}
+
+.row{
+    margin-left: 10px;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.row__filmes::-webkit-scrollbar{ 
+    display: none; /*tira a barrinha de rolagem*/
+
+}
+
+
