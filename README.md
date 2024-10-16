@@ -1,4 +1,4 @@
-# Site de filnmes.
+# Site de filmes.
 
 Este é um site de exploração cinematográfica que apresenta uma plataforma para os usuários descobrirem filmes, com navegação simples e acesso rápido às funcionalidades.
 
